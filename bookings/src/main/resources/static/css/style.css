@@ -1,0 +1,107 @@
+body{
+  margin: 0;
+  padding:0;
+  background-image: url("/image/hotel2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+  margin:0 auto;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  color: white;
+  margin-top:10px;
+  position: relative;
+  z-index: 1;
+}
+
+#overlay{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  margin: 0;
+  padding:0;
+  top: 0;
+}
+
+#form{
+  background: white;
+  border: 0 none;
+  border-radius: 0px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 5%;
+  text-align: center;
+  font-family: arial;
+  font-weight: bold;
+}
+
+input[type=text]{
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  width: 80%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 16px;
+}
+
+input[type=password]{
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  width: 80%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 16px;
+}
+
+#password{
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  width: 80%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 16px;
+}
+
+#login{
+  width: 15%;
+  background: #ee0979;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 20px 15px;
+  margin: 10px 5px;
+  font-size: 15px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: gray;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: gray;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: gray;
+}

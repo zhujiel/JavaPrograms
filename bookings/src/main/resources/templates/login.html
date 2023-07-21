@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="" th:href="@{css/style.css}" />
+</head>
+<body>
+<h1>Hotel is the first step for traveling</h1>
+<div id="overlay"></div>
+<form action="login" method="post" id="form" th:action="@{/login}" th:object="${user}" >
+
+    <h2>Please login before everything</h2>
+    <div th:if="${param.error}">
+        <p class="text-danger" style="color:red;font-weight:bold;font-family:arial;">Invalid username or password</p>
+    </div>
+    <input type="text" name="username" id="username" placeholder="Username" required autofocus /> <br/><br/>
+
+    <input style="padding: 20px; border: 1px solid #ccc;
+                  border-radius: 0px;
+                  margin-bottom: 10px;
+                  width: 80%;
+                  box-sizing: border-box;
+                  font-family: montserrat;
+                  color: #2C3E50;
+                  font-size: 16px;" type="password" name="password" id="password" placeholder="Password" required /><br/><br/>
+
+    <button type="submit" id="login">Login</button>
+    <a></a>
+</form>
+</body>
+</html>
